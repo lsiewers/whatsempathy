@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Whatsapp Empathy",
+  "version": "0.001",
+  "content_scripts": [
+      {
+          "matches": [
+              "https://web.whatsapp.com/"
+          ],
+          "js": [
+              "face-api/face-api.min.js",
+              "expression.js",
+              "WA-mod.js"
+            ]
+      }
+  ],
+  "permissions": [
+    "activeTab",
+    "chrome://extensions/*"
+  ],
+  "web_accessible_resources": [
+      "*"
+  ]
+}
